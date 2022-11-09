@@ -50,12 +50,68 @@
                 <a href="#" data-v-baaa4d88="" class="van-cell__title"><span data-v-baaa4d88="" class="van-tag van-tag--warning">বন্ধুদের আমন্ত্রণ করুন</span></a>
 
 
+
+                <div class="row">
+
+                    <div class="col-4">
+
+
+
+                        <router-link :to="{name:'teamMember'}" class="d-block text-center profileLinks">
+                            <i class="fas fa-users" style="color: #1ad397;"></i> <br/>
+                            <span>আমার<br/> দল</span>
+                        </router-link>
+                    </div>
+                    <div class="col-4">
+
+                        <router-link :to="{name:'orders'}" class="d-block text-center profileLinks">
+                            <i class="fas fa-tasks" style="color: lime;"></i> <br/>
+                            <span>অ্যাকাউন্টের<br/> বিশদ বিবরণ</span>
+                        </router-link>
+                    </div>
+                    <div class="col-4">
+
+                        <router-link :to="{name:'rechargeHistory'}" class="d-block text-center profileLinks">
+                            <i class="fas fa-file-invoice-dollar" style="color: rgb(255 153 0);"></i> <br/>
+                            <span>টপ-আপ<br/> ইতিহাস</span>
+                        </router-link>
+
+                    </div>
+                    <div class="col-4">
+
+                        <router-link :to="{name:'WithdrawHistory'}" class="d-block text-center profileLinks">
+                            <i class="fas fa-person-booth" style="color: rgb(192 255 0);"></i> <br/>
+                            <span>প্রত্যাহারের<br/> ইতিহাস</span>
+                        </router-link>
+
+                    </div>
+                    <div class="col-4">
+
+                        <router-link :to="{name:'bankAccount'}" class="d-block text-center profileLinks">
+                            <i class="fas fa-university" style="color: rgb(145 145 145);"></i> <br/>
+                            <span>ওয়ালেট<br/> সেটিংস</span>
+                        </router-link>
+
+                    </div>
+                    <div class="col-4">
+
+                        <router-link :to="{name:'RechangePass'}" class="d-block text-center profileLinks">
+                            <i class="fas fa-cogs" style="color: rgb(227 96 46);"></i> <br/>
+                            <span>পাসওয়ার্ড<br/> সেটিংস</span>
+                        </router-link>
+
+                    </div>
+                </div>
+
+
+
+<!--
            <router-link :to="{name:'teamMember'}" data-v-baaa4d88="" role="button" tabindex="0" class="info-cell van-cell van-cell--clickable van-cell--borderless">আমার দল</router-link>
            <router-link :to="{name:'orders'}" data-v-baaa4d88="" role="button" tabindex="0" class="info-cell van-cell van-cell--clickable van-cell--borderless">অ্যাকাউন্টের বিশদ বিবরণ</router-link>
            <router-link :to="{name:'rechargeHistory'}" data-v-baaa4d88="" role="button" tabindex="0" class="info-cell van-cell van-cell--clickable van-cell--borderless">টপ-আপ ইতিহাস</router-link>
            <router-link :to="{name:'WithdrawHistory'}" data-v-baaa4d88="" role="button" tabindex="0" class="info-cell van-cell van-cell--clickable van-cell--borderless">প্রত্যাহারের ইতিহাস</router-link>
            <router-link :to="{name:'bankAccount'}" data-v-baaa4d88="" role="button" tabindex="0" class="info-cell van-cell van-cell--clickable van-cell--borderless">ওয়ালেট সেটিংস</router-link>
-           <router-link :to="{name:'RechangePass'}" data-v-baaa4d88="" role="button" tabindex="0" class="info-cell van-cell van-cell--clickable van-cell--borderless">পাসওয়ার্ড সেটিংস</router-link>
+           <router-link :to="{name:'RechangePass'}" data-v-baaa4d88="" role="button" tabindex="0" class="info-cell van-cell van-cell--clickable van-cell--borderless">পাসওয়ার্ড সেটিংস</router-link> -->
 
            <router-link :to="{name:'logout'}" data-v-baaa4d88="" style="display: flex;justify-content: center;align-items: center;color: white !important;" class="money-btn van-button van-button--primary van-button--normal van-button--block">সাইন আউট করুন</router-link>
 
@@ -209,8 +265,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
+.profileLinks i {
+    font-size: 31px;
+    padding: 10px;
+}
+.profileLinks {
+    font-size: 12px;
+    color: white;
+    margin: 14px 3px;
+}
 section.accontDetails {
     background: #008dff;
     color: white;

@@ -18,8 +18,21 @@ class TaskController extends Controller
     public function index(Request $request)
     {
 
-
         $user_id = $request->user_id;
+        $blog_id = $request->blog_id;
+        if($blog_id && $user_id){
+
+              $liked = Task::where(['user_id'=>$user_id,'blog_id'=>$blog_id])->count();
+              $totalLiked = Task::where(['blog_id'=>$blog_id])->count();
+        return  $data = [
+                'liked'=>$liked,
+                'totalLiked'=>$totalLiked,
+            ];
+
+         }
+
+
+
         $count = $request->count;
         if($user_id && $count){
            return  $task = Task::where(['user_id'=>$user_id])->latest()->take($count)->get()->sum('task_comisition');
@@ -30,7 +43,7 @@ class TaskController extends Controller
         $id = $request->id;
         if($id){
 
-            $task = Task::where(['user_id'=>$id])->get();
+            $task = Task::where(['user_id'=>$id])->orderBy('created_at','desc')->get();
             $user = User::find($id);
             $plans = Plan::find($user->plan_id);
 
@@ -164,6 +177,7 @@ if($tascount>0){
 
     $data = [
         'task_comisition'=>$task_comisition,
+        'blog_id'=>$request->blog_id,
         'user_id'=>$user_id
     ];
 

@@ -1,5 +1,5 @@
 body {
-    background-color: #2b333f;
+    background-color: #220f70;
     margin: 0px;
     width: 100%;
     font-size: 12px;
@@ -38,14 +38,14 @@ body {
 .web-title-name-span {
     margin-top: 6px;
     display: block;
-    color: #b58a48;
+    color: #c56a0d;
     font-size: 27px;
     font-weight: 800;
 }
 .web-title-info-span {
     margin-top: 0.13333rem;
     display: block;
-    color: #b58a48;
+    color: #c56a0d;
 }
 img.van-image__img {
     display: block;
@@ -62,14 +62,14 @@ img.van-image__img {
 .cell-group {
     padding: 0.53333rem;
     color: #c1c1c1;
-    background: #2b333f;
+    background: #220f70;
     border-radius: 0.26667rem;
     border: none;
 }
 .cell-group {
     padding: 0.53333rem;
     color: #c1c1c1;
-    background: #2b333f;
+    background: #220f70;
     border-radius: 0.26667rem;
     border: none;
 }
@@ -120,7 +120,7 @@ img.van-image__img {
     min-width: 0;
     margin: 0;
     padding: 0;
-    color: #b58a48;
+    color: #c56a0d;
     line-height: inherit;
     text-align: left;
     background-color: transparent;
@@ -202,8 +202,8 @@ img.van-image__img {
     border-color: #1989fa;
 }
 .home-info-cell-group-cell[data-v-e9381f42], .home-info-cell-group[data-v-e9381f42] {
-    color: #b58a48;
-    font-size: 20px;
+    color: #c56a0d;
+    font-size: 15px;
     margin-left: 13px;
 }
 .van-cell--clickable {
@@ -220,8 +220,8 @@ i.fa-solid.fa-gem {
 .home-start-work-btn[data-v-e9381f42] {
     margin-top: 0.53333rem;
     border-radius: 0.26667rem;
-    background: -webkit-linear-gradient(137deg,#b58a48,#36404e,#b58a48);
-    background: linear-gradient(313deg,#b58a48,#36404e,#b58a48);
+    background: -webkit-linear-gradient(313deg,#a7df39,#378aff,#dedf39);
+    background: linear-gradient(313deg,#a7df39,#378aff,#dedf39);
     border: none;
 }
 .van-button--block {
@@ -241,10 +241,10 @@ i.fa-solid.fa-gem {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
-    height: 3.17333rem;
+    height: 2.5rem;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.2;
     text-align: center;
     border-radius: 24px;
@@ -282,7 +282,7 @@ button, input, textarea {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #283647;
+    background: #232c97;
     border-top: 2px solid #5d3838;
     position: fixed;
     bottom: 0;
@@ -295,16 +295,16 @@ button, input, textarea {
 }
 .login-btn {
     border-radius: 0.26667rem;
-    background: -webkit-linear-gradient(137deg,#b58a48,#36404e,#b58a48);
-    background: linear-gradient(313deg,#b58a48,#36404e,#b58a48);
+    background: -webkit-linear-gradient(313deg,#a7df39,#378aff,#dedf39);
+    background: linear-gradient(313deg,#a7df39,#378aff,#dedf39);
     border: none;
 }
 .layout-content {
     margin: 0 auto;
     height: 100%;
-    background-color: #2b333f;
+    background-color: #220f70;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    color: #b58a48;
+    color: #c56a0d;
     overflow-y: scroll;
 }
 .app-container {
@@ -350,8 +350,8 @@ button, input, textarea {
 }
 .money-btn {
     border-radius: 0.26667rem;
-    background: -webkit-linear-gradient(137deg,#b58a48,#36404e,#b58a48);
-    background: linear-gradient(313deg,#b58a48,#36404e,#b58a48);
+    background: -webkit-linear-gradient(313deg,#a7df39,#378aff,#dedf39);
+    background: linear-gradient(313deg,#a7df39,#378aff,#dedf39);
     border: none;
     margin: 10px;
 }
@@ -380,7 +380,7 @@ border-radius: 10px;
 margin-top: 10px;
 }
 .info-cell{
-    color: #b58a48;
+    color: #c56a0d;
 }
 .van-cell-group__title {
     padding: 0.42667rem 0.42667rem 0.21333rem;
@@ -404,7 +404,7 @@ margin-top: 10px;
         -webkit-font-smoothing: antialiased;
     }
     .van-cell__title {
-        font-size: 21px;
+        font-size: 16px;
     }
     .van-grid-item__content {
         display: -webkit-box;
@@ -424,9 +424,9 @@ margin-top: 10px;
     .layout-content {
         margin: 0 auto;
         height: 100%;
-        background-color: #2b333f;
+        background-color: #220f70;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
-        color: #b58a48;
+        color: #c56a0d;
         /* overflow-y: scroll; */
     }
     .van-field__value {
@@ -478,6 +478,7 @@ margin-top: 10px;
             align-items: center;
             font-size: 13px;
             justify-content: space-between;
+            padding: 0 10px;
         }
         .inputlabel{
             width: 27%;

@@ -57,10 +57,10 @@ $json_arr = json_decode($data, true);
 // $json_arr[] = $makearray;
 
 // encode json and save to file
-return file_put_contents('tiktoks.json', json_encode($makearray));
+ file_put_contents('tiktoks.json', json_encode($makearray));
 
 
-
+return redirect()->back();
 
 
 

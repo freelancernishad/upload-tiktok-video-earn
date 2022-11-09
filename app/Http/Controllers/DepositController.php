@@ -187,11 +187,12 @@ setInterval(function(){
     public function userbanned($status, $id)
     {
         $deposit = Deposit::find($id);
-        if ($status == 'approved') {
         $userid = $deposit->user_id;
         $methodid = $deposit->method;
-          $user = User::find($userid);
+        $user = User::find($userid);
         $DPamount =  $deposit->amount;
+
+        if ($status == 'approved') {
 
          $todayCompleted =  Task::where(['user_id'=>$userid])->whereDate('created_at', Carbon::today())->count();
 
@@ -260,7 +261,11 @@ setInterval(function(){
 
 
 
-        transitionCreate($userid,$amount,0,$amount,'increase',$deposit->trx,'rechage','');
+        transitionCreate($userid,$deposit->amount,0,$amount,'increase',$deposit->trx,'rechage','');
+    }else{
+
+        transitionCreate($userid,$deposit->amount,0,$user->balance,'decrease',$deposit->trx,'rechage reject','');
+
     }
          $deposit->update(['status' => $status]);
 
