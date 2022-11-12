@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Blog;
+use App\Models\blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\blog_category;
@@ -14,7 +14,7 @@ class blogController extends Controller
         $type = $request->type;
 
 if($type=='random'){
-    return Blog::inRandomOrder()->first();
+    return blog::inRandomOrder()->first();
 }
 
 
