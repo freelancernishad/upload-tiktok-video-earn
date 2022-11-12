@@ -29,8 +29,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <style>
 
-.swiper-item-content {
-    text-align: center !important;
+.video-cntainer {
+
 }
     </style>
 <style>

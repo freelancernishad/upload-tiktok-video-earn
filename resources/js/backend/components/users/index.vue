@@ -5,7 +5,7 @@
                     <div class="van-nav-bar van-nav-bar--fixed">
                         <div class="van-nav-bar__content"><div class="van-nav-bar__title van-ellipsis">হোম পৃষ্ঠা</div></div>
                     </div>
-                    <div data-v-e9381f42="" style="padding: 50px 20px;">
+                    <div data-v-e9381f42="" style="padding: 83px 20px;">
                         <div data-v-e9381f42="" class="home-info-cell-group van-cell-group">
                             <div data-v-e9381f42="" role="button" tabindex="0" class="home-info-cell-group-cell van-cell van-cell--clickable">
                                 <i data-v-e9381f42="" class="van-icon van-icon-gem van-cell__left-icon"><!----></i>
@@ -42,9 +42,9 @@
                             </div>
                             <!---->
                         </div>
-                        <button data-v-e9381f42="" class="home-start-work-btn van-button van-button--primary van-button--normal van-button--block">
-                            <div data-v-e9381f42="" class="van-button__content"><span data-v-e9381f42="" class="van-button__text">কাজটি শুরু করুন</span></div>
-                        </button>
+                        <router-link :to="{name:'Usertask'}" data-v-e9381f42="" class="home-start-work-btn van-button van-button--primary van-button--normal van-button--block">
+                            <div data-v-e9381f42="" class="van-button__content" style="    padding: 13px 6px;"><span data-v-e9381f42="" class="van-button__text" >কাজটি শুরু করুন</span></div>
+                        </router-link>
                     </div>
                 </div>
 

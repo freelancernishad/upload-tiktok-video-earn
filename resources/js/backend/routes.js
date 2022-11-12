@@ -56,7 +56,7 @@ let role = require('./components/assignRole.vue').default;
 let Authuser = require('./components/users/index.vue').default;
 let Useraccount = require('./components/users/account.vue').default;
 let UserTeam = require('./components/users/team.vue').default;
-let Usertask = require('./components/users/task.vue').default;
+let Usertask = require('./components/users/task3.vue').default;
 let UsertaskComplete = require('./components/users/taskcomplete.vue').default;
 //////////////////
 let companyPro = require('./components/users/companyPro.vue').default;
@@ -64,7 +64,7 @@ let license = require('./components/users/license.vue').default;
 let teamdetails = require('./components/users/teamdetails.vue').default;
 let teamMember = require('./components/users/teamMember.vue').default;
 let teamIntro = require('./components/users/teamIntro.vue').default;
-let Recharge = require('./components/users/Recharge.vue').default;
+let Recharge = require('./components/users/Recharge2.vue').default;
 let RechargePage = require('./components/users/RechargePage.vue').default;
 let Withdraw = require('./components/users/Withdraw.vue').default;
 let invite = require('./components/users/invite.vue').default;

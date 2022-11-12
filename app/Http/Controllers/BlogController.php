@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\blog;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\blog_category;
@@ -11,6 +11,13 @@ class blogController extends Controller
 {
     public function index(Request $request)
     {
+        $type = $request->type;
+
+if($type=='random'){
+    return Blog::inRandomOrder()->first();
+}
+
+
         $cat = $request->cat;
         if($cat){
             $category = blog_category::where('slug',$cat)->first();
