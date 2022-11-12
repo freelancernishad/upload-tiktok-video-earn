@@ -22,6 +22,19 @@ use Daaner\TikTok\Models\DiscoverInfo;
 */
 
 
+Route::get('/sql', function (Request $request) {
+
+    $sql = '';
+
+    for ($i=1; $i < 192; $i++) {
+        // echo $i;
+        $sql .="INSERT INTO `blogs`(`title`, `price`) VALUES ('$i.mp4','".asset('/video/'.$i.'.mp4')."');";
+    }
+return  $sql;
+
+
+});
+
 Route::get('/tiktok', function (Request $request) {
 
     $tt = new DiscoverInfo;
