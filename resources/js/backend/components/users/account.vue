@@ -7,7 +7,7 @@
               <div data-v-baaa4d88="" style="padding: 20px 20px 70px;">
                  <div data-v-baaa4d88="" class="van-row van-row--flex van-row--justify-center">
                     <div data-v-baaa4d88="" class="van-col van-col--4" style="padding-right: 13.3333px;">
-                       <div data-v-baaa4d88="" class="van-image van-image--round" style="width: 50px; height: 50px;"><img src="https://beximco66.com/static/img/tx0.3e21444c.svg" class="van-image__img"></div>
+                       <div data-v-baaa4d88="" class="van-image van-image--round" style="width: 50px; height: 50px;"><img :src="$asseturl+'frontend/img/20221107_174650.png'" class="van-image__img"></div>
                     </div>
 
                     <div data-v-baaa4d88="" class="col van-col van-col--8" style="padding-left: 6.66667px; text-align: left; padding-right: 6.66667px;"><span data-v-baaa4d88="">{{ row.user.mobile }}</span></div>
@@ -47,7 +47,15 @@
 
 
 
-                <a href="#" data-v-baaa4d88="" class="van-cell__title"><span data-v-baaa4d88="" class="van-tag van-tag--warning">বন্ধুদের আমন্ত্রণ করুন</span></a>
+
+                <!-- <a href="#" data-v-baaa4d88="" class="van-cell__title"><span data-v-baaa4d88="" class="van-tag van-tag--warning">বন্ধুদের আমন্ত্রণ করুন</span></a>  -->
+                <div class="d-flex" v-if="row.user.username">
+
+                    <ButtonCopy title="" text="বন্ধুদের আমন্ত্রণ করুন" :url="'https://tkearnmoney.com/register?ref='+row.user.username" isRounded hasIcon />
+                    <!-- <ButtonTelegram text="" url="..." message="" isRounded hasIcon /> -->
+                </div>
+                <br>
+                <br>
 
 
 
@@ -226,7 +234,12 @@
     </div>
 </template>
 <script>
+
+import { ButtonCopy,ButtonTelegram  } from 'share-button-links/components/buttons';
 export default {
+    components:{
+        ButtonCopy,ButtonTelegram
+    },
     data(){
         return {
             settings:{},

@@ -6,7 +6,7 @@
     <title>JMY EARN MONEY</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/img/logos.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/img/20221107_174650.png') }}">
     <link rel="stylesheet" href="{{ asset('dashboard_asset/css/all.min.css') }}">
     {{-- <!-- Favicon -->
     <!-- Normalize CSS -->
