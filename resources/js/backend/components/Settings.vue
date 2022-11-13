@@ -52,6 +52,15 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Refer Limit</label>
+                                            <!-- <vue-editor v-model="form.notice"></vue-editor> -->
+                                            <input v-model="form.ref_count" class="form-control"/>
+
+                                        </div>
+                                    </div>
+
 
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -123,6 +132,58 @@
                                     </div>
 
 
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-form-label">Slider 1
+                                        </label>
+
+                                            <input type="file" class="form-control" id="slide1"  @change="FileSelected($event, 'slide1')"  />
+                                            <label for="slide1">
+                                            <b-img thumbnail fluid :src="form.slide1" alt="Image 3"></b-img>
+                                            </label>
+                                    </div>
+                                </div>
+
+
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-form-label">Slider 2
+                                        </label>
+
+                                            <input type="file" class="form-control" id="slide2"  @change="FileSelected($event, 'slide2')"  />
+                                            <label for="slide3">
+                                            <b-img thumbnail fluid :src="form.slide2" alt="Image 3"></b-img>
+                                            </label>
+                                    </div>
+                                </div>
+
+
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-form-label">Slider 3
+                                        </label>
+
+                                            <input type="file" class="form-control" id="slide3"  @change="FileSelected($event, 'slide3')"  />
+                                            <label for="slide3">
+                                            <b-img thumbnail fluid :src="form.slide3" alt="Image 3"></b-img>
+                                            </label>
+                                    </div>
+                                </div>
+
+
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-form-label">Slider 4
+                                        </label>
+
+                                            <input type="file" class="form-control" id="slide4"  @change="FileSelected($event, 'slide4')"  />
+                                            <label for="slide4">
+                                            <b-img thumbnail fluid :src="form.slide4" alt="Image 3"></b-img>
+                                            </label>
+                                    </div>
+                                </div>
+
+
                             <div class="col-md-12 mt-4">
 
                                 <button type="submit" class="btn-fill-lmd text-light gradient-dodger-blue">Submit</button>
@@ -154,6 +215,26 @@ export default {
         }
     },
     methods: {
+
+
+        FileSelected($event, parent_index){
+
+
+
+let file = $event.target.files[0];
+if (file.size > 5048576) {
+    Notification.image_validation();
+} else {
+    let reader = new FileReader;
+    reader.onload = event => {
+        this.form[parent_index] = event.target.result
+        // console.log(event.target.result);
+    };
+    reader.readAsDataURL(file)
+}
+        //   console.log($event.target.result);
+},
+
         async getData(){
 
             var res = await this.callApi('get',`/api/admin/setting/1`,[]);

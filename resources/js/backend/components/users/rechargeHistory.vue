@@ -9,7 +9,7 @@
         <section id="listmenus"  style="margin-top: 60px;">
             <div role="feed" class="van-list row" aria-busy="true">
                 <div class="recordDiv col-md-12" v-for="rech in row" :key="'rech'+rech.id">
-                    <div class="card text-white" style="background: #3c260f;font-size: 16px;margin: 17px;margin-bottom: 20px">
+                    <div class="card text-white" style="background: #483b2e00;font-size: 16px;margin: 17px;margin-bottom: 20px">
                         <div class="card-body">
                             <p style="color:#ff7d7d;margin: 0;">{{ dateformatglobal(rech.created_at)[6] }}</p>
                             <p style="color:#40c140;margin: 0;">ট্রান্সিশন নম্বর  : {{ rech.trx }}</p>

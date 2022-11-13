@@ -12,14 +12,14 @@ body {
     background: #36404e;
 }
 .van-nav-bar__title {
-    max-width: 60%;
+    max-width: 75%;
     margin: 0 auto;
     color: #eef1f7;
     font-weight: 500;
     font-size: .42667rem;
 }
 .van-nav-bar__title.van-ellipsis {
-    font-size: 23px;
+    font-size: 15px;
     padding: 13px;
     color: #eef1f7;
     padding-bottom: 19px;
@@ -335,7 +335,7 @@ button, input, textarea {
 }
 .my-info-grid {
     margin: 0.53333rem auto;
-    background: url(https://beximco66.com/static/img/info-bg.005cfaef.png) no-repeat;
+    /* background: url(https://beximco66.com/static/img/info-bg.005cfaef.png) no-repeat; */
     background-size: 100% 100%;
     margin-top: 70px;
 }
@@ -426,7 +426,7 @@ margin-top: 10px;
         height: 100%;
         background-color: #220f70;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
-        color: #c56a0d;
+        color: #ffffff;
         /* overflow-y: scroll; */
     }
     .van-field__value {
@@ -543,7 +543,7 @@ margin-top: 10px;
             color: #aa7801 !important;
         }
         .bank_datails {
-            background: #37404F;
+            background: #4a2b2b00;
             padding: 9px 10px;
             margin: 11px 12px;
             border-radius: 9px;

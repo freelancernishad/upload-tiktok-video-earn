@@ -12,17 +12,17 @@
 
                     <div data-v-baaa4d88="" class="col van-col van-col--8" style="padding-left: 6.66667px; text-align: left; padding-right: 6.66667px;"><span data-v-baaa4d88="">{{ row.user.mobile }}</span></div>
 
-                     <button data-v-baaa4d88="" class="van-button van-button--info van-button--normal van-button--plain van-button--block van-button--round" style="background: rgb(54, 64, 78); color: rgb(181, 138, 72); border: none;">আমন্ত্রণ কোড: {{ row.user.username }} </button>
+                     <button data-v-baaa4d88="" class="money-btn van-button van-button--info van-button--normal van-button--plain van-button--block van-button--round" style="border: none;">আমন্ত্রণ কোড: {{ row.user.username }} </button>
 
                  </div>
 
                  <div data-v-baaa4d88="" class="my-info-grid van-grid">
                     <div data-v-baaa4d88="" class="van-grid-item" style="flex-basis: 50%;">
-                        <span data-v-baaa4d88="">ভারসাম্য</span><!---->
+                        <span data-v-baaa4d88="">মোট ব্যালেন্স</span><!---->
                         <span class="van-grid-item__text">{{ parseFloat(row.user.balance).toFixed(2) }}</span>
                     </div>
                     <div data-v-baaa4d88="" class="van-grid-item" style="flex-basis: 50%;">
-                        <span data-v-baaa4d88="">আজ কাজের চাপ</span><!---->
+                        <span data-v-baaa4d88="">মোট আয়</span><!---->
                         <span class="van-grid-item__text">{{ parseFloat(row.taskearn).toFixed(2) }}</span>
                     </div>
                     <!-- <div data-v-baaa4d88="" class="van-grid-item" style="flex-basis: 50%;">
@@ -38,7 +38,7 @@
 
 
                  <div data-v-baaa4d88="" class="van-row van-row--flex van-row--justify-center">
-                     <router-link :to="{name:'Recharge'}" data-v-baaa4d88="" style="text-align: center;display: flex;justify-content: center;align-items: center;color: white;text-decoration: none;" class="money-btn van-button van-button--primary van-button--normal van-button--block">রিচার্জ</router-link>
+                     <router-link :to="{name:'Recharge'}" data-v-baaa4d88="" style="text-align: center;display: flex;justify-content: center;align-items: center;color: white;text-decoration: none;" class="money-btn van-button van-button--primary van-button--normal van-button--block">ডিপোজিট</router-link>
                      <router-link :to="{name:'Withdraw'}"  data-v-baaa4d88="" style="text-align: center;display: flex;justify-content: center;align-items: center;color: white;text-decoration: none;" class="money-btn van-button van-button--primary van-button--normal van-button--block">প্রত্যাহার</router-link>
                  </div>
 
@@ -70,13 +70,7 @@
                             <span>আমার<br/> দল</span>
                         </router-link>
                     </div>
-                    <div class="col-4">
 
-                        <router-link :to="{name:'orders'}" class="d-block text-center profileLinks">
-                            <i class="fas fa-tasks" style="color: lime;"></i> <br/>
-                            <span>অ্যাকাউন্টের<br/> বিশদ বিবরণ</span>
-                        </router-link>
-                    </div>
                     <div class="col-4">
 
                         <router-link :to="{name:'rechargeHistory'}" class="d-block text-center profileLinks">
@@ -95,9 +89,16 @@
                     </div>
                     <div class="col-4">
 
+                    <router-link :to="{name:'orders'}" class="d-block text-center profileLinks">
+                        <i class="fas fa-tasks" style="color: lime;"></i> <br/>
+                        <span>কাজের<br/> বিবরণ</span>
+                    </router-link>
+                    </div>
+                    <div class="col-4">
+
                         <router-link :to="{name:'bankAccount'}" class="d-block text-center profileLinks">
                             <i class="fas fa-university" style="color: rgb(145 145 145);"></i> <br/>
-                            <span>ওয়ালেট<br/> সেটিংস</span>
+                            <span>ব্যাংক কার্ড<br/> সেটিংস</span>
                         </router-link>
 
                     </div>

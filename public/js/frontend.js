@@ -2732,11 +2732,6 @@ var render = function render() {
       "data-v-7e320bfa": ""
     }
   }, [_c("span", {
-    staticClass: "web-title-name-span",
-    attrs: {
-      "data-v-413e4dc8": ""
-    }
-  }, [_vm._v("স্বাগতম")]), _c("span", {
     staticClass: "web-title-info-span",
     attrs: {
       "data-v-413e4dc8": ""
@@ -2863,7 +2858,7 @@ var render = function render() {
       },
       "data-v-413e4dc8": ""
     }
-  }, [_vm._v("নাম নথিভুক্ত করুন")])], 1)])])])]);
+  }, [_vm._v("নতুন রেজিস্ট্রেশন করুন")])], 1)])])])]);
 };
 
 var staticRenderFns = [function () {
@@ -2876,7 +2871,7 @@ var staticRenderFns = [function () {
       "data-v-7e320bfa": ""
     }
   }, [_c("div", {
-    staticClass: "van-nav-bar__content"
+    staticClass: "login-btn van-nav-bar__content"
   }, [_c("div", {
     staticClass: "van-nav-bar__title van-ellipsis"
   }, [_vm._v("লগইন")])])]);
@@ -2949,7 +2944,7 @@ var render = function render() {
     attrs: {
       "data-v-cd1085ee": ""
     }
-  }, [_vm._v("নাম নথিভুক্ত করুন")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("নতুন রেজিস্ট্রেশন করুন")]), _vm._v(" "), _c("div", {
     staticClass: "cell-group van-cell-group",
     attrs: {
       "data-v-cd1085ee": ""
@@ -3166,7 +3161,7 @@ var staticRenderFns = [function () {
     attrs: {
       "data-v-cd1085ee": ""
     }
-  }, [_vm._v("নাম নথিভুক্ত করুন")])])])]);
+  }, [_vm._v("রেজিস্ট্রেশন")])])])]);
 }];
 render._withStripped = true;
 

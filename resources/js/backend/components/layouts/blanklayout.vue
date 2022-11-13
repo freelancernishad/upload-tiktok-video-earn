@@ -17,24 +17,36 @@
 
         <div data-v-fbb34206="" class="van-tabbar van-tabbar--fixed">
 
-        <router-link :to="{name:'Authuser'}" class="van-tabbar-item__text"><i class="fas fa-igloo" style=" font-size: 22px;color: #15b9b9;"></i></router-link>
-        <router-link :to="{name:'orders'}" class="van-tabbar-item__text"><i class="fas fa-tasks" style=" font-size: 22px;color: lime;"></i></router-link>
+            <router-link :to="{name:'Useraccount'}" class="van-tabbar-item__text"><i class="fa fa-home" style=" font-size: 35px;color: #15b9b9;"></i></router-link>
 
-        <router-link :to="{name:'Usertask'}" data-v-fbb34206="" class="van-tabbar-item van-tabbar-item--active">
+            <!-- <router-link :to="{name:'Authuser'}" class="van-tabbar-item__text"><i class="fas fa-igloo" style=" font-size: 35px;color: #15b9b9;"></i></router-link> -->
+
+            <router-link :to="{name:'Authuser'}" class="van-tabbar-item__text"><i class="fa fa-bar-chart" style=" font-size: 31px;color: #15b9b9;"></i></router-link>
+
+
+
+            <router-link :to="{name:'Authuser'}" data-v-fbb34206="" class="van-tabbar-item van-tabbar-item--active">
            <div class="van-tabbar-item__icon">
             <i class="fas fa-video" style="    font-size: 28px;
-    display: flex;
-    width: 50px;
-    height: 50px;
-    box-shadow: rgb(166 174 189 / 60%) 10px 10px 30px;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: #fd0cbe;"></i>
+        display: flex;
+        width: 50px;
+        height: 50px;
+        box-shadow: rgb(166 174 189 / 60%) 10px 10px 30px;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #fd0cbe;"></i>
            </div>
         </router-link>
-        <a href="#" class="van-tabbar-item__text"><i class="fab fa-android" style=" font-size: 22px;color: #3DD382;"></i></a>
-        <router-link :to="{name:'Useraccount'}" class="van-tabbar-item__text"><i class="fas fa-user-circle" style=" font-size: 22px;color: #15b9b9;"></i></router-link>
+
+
+            <router-link :to="{name:'orders'}" class="van-tabbar-item__text"><i class="fa fa-phone-square" style=" font-size: 32px;color: lime;"></i></router-link>
+
+
+
+
+        <a href="#" class="van-tabbar-item__text"><i class="fa fa-mobile" style=" font-size: 41px;color: #3DD382;"></i></a>
+
 
      </div>
 

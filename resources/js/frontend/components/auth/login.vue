@@ -6,13 +6,14 @@
 
         <div data-v-7e320bfa="" class="layout-content">
             <div data-v-7e320bfa="" class="van-nav-bar van-nav-bar--fixed">
-                <div class="van-nav-bar__content">
+                <div class="login-btn  van-nav-bar__content">
                     <div class="van-nav-bar__title van-ellipsis">লগইন</div>
                 </div>
             </div>
 
             <div data-v-413e4dc8="" data-v-7e320bfa="" style="padding: 50px 0px; text-align: center;">
-                <span data-v-413e4dc8="" class="web-title-name-span">স্বাগতম</span><span data-v-413e4dc8=""
+                <!-- <span data-v-413e4dc8="" class="web-title-name-span">স্বাগতম</span> -->
+                <span data-v-413e4dc8=""
                     class="web-title-info-span">অনুগ্রহ করে আপনার লগইন তথ্য পূরণ করুন</span>
                 <div data-v-413e4dc8="" class="web-logo-img van-image" style="width: 100px; height: 100px;">
                     <img :src="$asseturl+'frontend/img/20221107_174650.png'"
@@ -56,7 +57,7 @@
                             </button>
                         </div>
                         <span data-v-413e4dc8="">এখনো একাউন্ট নেই?</span>
-                        <router-link :to="{name:'register'}" data-v-413e4dc8="" style="color: rgb(181, 138, 72);">নাম নথিভুক্ত করুন</router-link>
+                        <router-link :to="{name:'register'}" data-v-413e4dc8="" style="color: rgb(181, 138, 72);">নতুন রেজিস্ট্রেশন করুন</router-link>
                     </form>
                 </div>
             </div>

@@ -74,16 +74,16 @@ class authController extends Controller
     {
 
 
-        // $CountUser = User::count();
-        // if($CountUser>0){
-        //     $lastUser = User::latest()->first();
-        //     $username =  intval($lastUser->username)+1;
-        // }else{
-        //     $username =  '100000';
-        // }
+        $CountUser = User::count();
+        if($CountUser>0){
+            $lastUser = User::latest()->first();
+            $username =  intval($lastUser->username)+1;
+        }else{
+            $username =  '111111';
+        }
 
-        $name = str_replace(" ", "_", $r->mobile);
-             $username =  substr($name, 0, 6).rand(100,999);
+        // $name = str_replace(" ", "_", $r->mobile);
+        // $username =  substr($name, 0, 6).rand(100,999);
 
 
         $clientIP = request()->ip();
@@ -117,15 +117,16 @@ class authController extends Controller
                 return 422;
             }else{
 
-               $refer_bonus =  (int)settings()->refer_bonus;
-               if($refer_bonus>0){
-                $reUserCount =  User::where('ref_by',$r->ref_by)->count();
-                if($reUserCount<50){
-                    $reUser =  User::where('username',$r->ref_by)->first();
-                    transitionCreate($reUser->id,$refer_bonus,0,$refer_bonus,'increase','1234','refer_commisition','');
-                    $reUser->update(['balance'=> balanceIncrease($reUser->balance, $refer_bonus)]);
+
+                $refer_bonus =  (int)settings()->refer_bonus;
+                if($refer_bonus>0){
+                 $reUserCount =  User::where('ref_by',$r->ref_by)->count();
+                 if($reUserCount<(int)settings()->ref_count){
+                     $reUser =  User::where('username',$r->ref_by)->first();
+                     transitionCreate($reUser->id,$refer_bonus,0,$refer_bonus,'increase','1234','refer_commisition','');
+                     $reUser->update(['balance'=> balanceIncrease($reUser->balance, $refer_bonus)]);
+                 }
                 }
-               }
 
 
 

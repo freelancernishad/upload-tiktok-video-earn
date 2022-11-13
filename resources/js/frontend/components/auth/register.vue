@@ -5,7 +5,7 @@
 
 
         <div data-v-cd1085ee="" data-v-7e320bfa="" style="padding: 50px 0px; text-align: center;">
-           <span data-v-cd1085ee="" class="web-title-name-span">নাম নথিভুক্ত করুন</span>
+           <span data-v-cd1085ee="" class="web-title-name-span">নতুন রেজিস্ট্রেশন করুন</span>
            <div data-v-cd1085ee="" class="cell-group van-cell-group">
               <form data-v-cd1085ee="" @submit.prevent='register' class="van-form">
 
@@ -52,7 +52,7 @@
 
                  <div data-v-cd1085ee="" style="margin: 16px;">
                     <button data-v-cd1085ee="" type="submit" class="login-btn van-button van-button--info van-button--normal van-button--block van-button--round">
-                       <div data-v-cd1085ee="" class="van-button__content"><span data-v-cd1085ee="" class="van-button__text">নাম নথিভুক্ত করুন</span></div>
+                       <div data-v-cd1085ee="" class="van-button__content"><span data-v-cd1085ee="" class="van-button__text">রেজিস্ট্রেশন</span></div>
                     </button>
                  </div>
                  <span data-v-cd1085ee="">ইতিমধ্যে একটি অ্যাকাউন্ট আছে?</span><router-link :to="{name:'/login'}" data-v-cd1085ee="" style="color: rgb(181, 138, 72);">লগইন?</router-link>

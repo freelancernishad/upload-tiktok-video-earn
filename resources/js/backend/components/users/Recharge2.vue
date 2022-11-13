@@ -3,7 +3,7 @@
 
         <div class="layout-content">
                     <div class="van-nav-bar van-nav-bar--fixed mb-5">
-                        <div class="van-nav-bar__content"><div class="van-nav-bar__title van-ellipsis">রিচার্জ</div></div>
+                        <div class="van-nav-bar__content"><div class="van-nav-bar__title van-ellipsis">ডিপোজিট</div></div>
                     </div>
 
 
@@ -11,7 +11,7 @@
 
                     <div data-v-cd1085ee="" class="field-box-input van-cell van-field">
                             <label class="inputlabel" for="">
-                            <span>রিচার্জের মাধ্যম  </span>
+                            <span>ডিপোজিটের মাধ্যম  </span>
                             </label>
                             <select class="van-field__control" v-model="payMethods" @change="getMethods" required>
                                 <option value="">Select</option>
@@ -24,10 +24,10 @@
 
                     <div data-v-cd1085ee="" class="field-box-input van-cell van-field">
                             <label class="inputlabel" for="">
-                            <span>রিচার্জের পরিমাণ </span>
+                            <span>ডিপোজিটের পরিমাণ </span>
                             </label>
                             <input type="text" v-model="amount"
-                                placeholder="অনুগ্রহ করে রিচার্জের পরিমাণ পূরণ করুন" class="van-field__control">
+                                placeholder="অনুগ্রহ করে ডিপোজিটের পরিমাণ পূরণ করুন" class="van-field__control">
                     </div>
 
 
@@ -46,7 +46,7 @@
 
                         <form @submit.stop.prevent="onSubmit" v-else-if="step == 2" style="margin-top: 70px;margin-bottom: 100px;">
                         <h4 class="d-block money-btn text-white p-1 my-3">Payment Info</h4>
-                        <p  style="color: red;font-size: 17px;">বিঃদ্রঃ অবশই সেন্ড মানি করবেন এবং রেফারেন্স এ আপনার Username দিবেন ।</p>
+                        <p  style="color: red;font-size: 17px;">বিঃদ্রঃ অবশই সেন্ড মানি করবেন।</p>
                         <div class="patment_info">
                             <ul class="list-unstyled">
                                 <li class="li"><span>{{ form.method }} Account</span><span>

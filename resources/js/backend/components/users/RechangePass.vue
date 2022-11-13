@@ -27,7 +27,7 @@
     <label>{{ $t('Confirm_password.value') }}</label>
     <input type="password" class="form-control" v-model="accountPass.confirm" required :placeholder="$t('Please_enter_new_password_again.value')">
 
-    <input type="submit" class="money-btn" style="padding: 8px 14px;font-size: 23px;color: white;" :value="$t('Confirm_to_modify_the_login_password.value')">
+    <input type="submit" class="money-btn" style="padding: 8px 14px;font-size: 15px;color: white;" :value="$t('Confirm_to_modify_the_login_password.value')">
 
 </form>
 </div>
