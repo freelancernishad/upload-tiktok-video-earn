@@ -79,6 +79,7 @@ let RechangePass = require('./components/users/RechangePass.vue').default;
 let help = require('./components/users/help.vue').default;
 let promotion = require('./components/users/promotion.vue').default;
 let memberSystem = require('./components/users/memberSystem.vue').default;
+let support = require('./components/users/support.vue').default;
 let accountDetails = require('./components/users/accountDetails.vue').default;
 
 
@@ -196,6 +197,7 @@ export const routes = [
   { path:  `${prefixuser}/help`, component: help, name:'help',meta: { layout: blanklayout } },
   { path:  `${prefixuser}/promotion`, component: promotion, name:'promotion',meta: { layout: blanklayout } },
   { path:  `${prefixuser}/memberSystem`, component: memberSystem, name:'memberSystem',meta: { layout: blanklayout } },
+  { path:  `${prefixuser}/support`, component: support, name:'support',meta: { layout: blanklayout } },
   { path:  `${prefixuser}/accountDetails`, component: accountDetails, name:'accountDetails',meta: { layout: blanklayout } },
 
   { path:  `${prefixuser}/USDT`, component: USDT, name:'USDT',meta: { layout: blanklayout } },

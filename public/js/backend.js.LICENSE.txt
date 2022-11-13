@@ -46,6 +46,12 @@
  */
 
 /*!
+ * better-normal-scroll v1.15.2
+ * (c) 2016-2019 ustbhuangyi
+ * Released under the MIT License.
+ */
+
+/*!
  * jQuery JavaScript Library v3.6.0
  * https://jquery.com/
  *

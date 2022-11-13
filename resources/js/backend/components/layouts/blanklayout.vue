@@ -21,7 +21,7 @@
 
             <!-- <router-link :to="{name:'Authuser'}" class="van-tabbar-item__text"><i class="fas fa-igloo" style=" font-size: 35px;color: #15b9b9;"></i></router-link> -->
 
-            <router-link :to="{name:'Authuser'}" class="van-tabbar-item__text"><i class="fa fa-bar-chart" style=" font-size: 31px;color: #15b9b9;"></i></router-link>
+            <router-link :to="{name:'memberSystem'}" class="van-tabbar-item__text"><i class="fa fa-bar-chart" style=" font-size: 31px;color: #15b9b9;"></i></router-link>
 
 
 
@@ -40,7 +40,7 @@
         </router-link>
 
 
-            <router-link :to="{name:'orders'}" class="van-tabbar-item__text"><i class="fa fa-phone-square" style=" font-size: 32px;color: lime;"></i></router-link>
+            <router-link :to="{name:'support'}" class="van-tabbar-item__text"><i class="fa fa-phone-square" style=" font-size: 32px;color: lime;"></i></router-link>
 
 
 
