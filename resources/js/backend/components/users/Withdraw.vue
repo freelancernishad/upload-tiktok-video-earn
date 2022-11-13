@@ -32,7 +32,8 @@
                     <input type="tel" class="form-control" @input="checkAmount(form.amount)" v-model="form.amount">
                 </div>
             </div>
-
+            প্রত্যাহার সময় সকাল ১০:০০ থেকে বিকাল ০৪:০০ টা পর্যন্ত
+            <br>
             <button class="money-btn" style="padding: 8px 14px;font-size: 23px;color: white;" type="button" disabled v-if="con">Wait....</button>
             <button class="money-btn" style="padding: 8px 14px;font-size: 23px;color: white;" type="submit" @click="nextFun(2)" v-else>Confirm Withdraw</button>
 
@@ -181,27 +182,27 @@ export default {
 
 
 
-        // if(User.dateformat()[9]<=17){
-        //     if(User.dateformat()[9]>=14){
+        if(User.dateformat()[9]<=15){
+            if(User.dateformat()[9]>=10){
 
-        //         setTimeout(() => {
-        //             if(!this.form.method){
-        //                 alert('Please add Bank card first');
-        //                 this.$router.push({ name: 'bankAccount' });
-        //             }
-        //         }, 5000);
-        //     }else{
-        //     alert('প্রত্যাহার সময় সপ্তাহের সোমবার থেকে শুক্রবার দুপর ০২:০০ থেকে রাত ০৬:০০ টা পর্যন্ত')
+                setTimeout(() => {
+                    if(!this.form.method){
+                        alert('Please add Bank card first');
+                        this.$router.push({ name: 'bankAccount' });
+                    }
+                }, 5000);
+            }else{
+            alert('প্রত্যাহার সময় সকাল ১০:০০ থেকে বিকাল ০৪:০০ টা পর্যন্ত')
 
-        //         this.$router.push({ name: 'Authuser' });
+                this.$router.push({ name: 'Useraccount' });
 
 
-        //     }
-        // }else{
-        //     alert('প্রত্যাহার সময় সপ্তাহের সোমবার থেকে শুক্রবার দুপর ০২:০০ থেকে রাত ০৬:০০ টা পর্যন্ত')
-        //     this.$router.push({ name: 'Authuser' });
+            }
+        }else{
+            alert('প্রত্যাহার সময় সকাল ১০:০০ থেকে বিকাল ০৪:০০ টা পর্যন্ত')
+            this.$router.push({ name: 'Useraccount' });
 
-        // }
+        }
 
 
 

@@ -46,7 +46,7 @@
 
                         <form @submit.stop.prevent="onSubmit" v-else-if="step == 2" style="margin-top: 70px;margin-bottom: 100px;">
                         <h4 class="d-block money-btn text-white p-1 my-3">Payment Info</h4>
-                        <p  style="color: red;font-size: 17px;">বিঃদ্রঃ অবশই সেন্ড মানি করবেন।</p>
+                        <p  style="color: red;font-size: 17px;">বিঃদ্রঃ অবশ্যই সেন্ড মানি করবেন।</p>
                         <div class="patment_info">
                             <ul class="list-unstyled">
                                 <li class="li"><span>{{ form.method }} Account</span><span>

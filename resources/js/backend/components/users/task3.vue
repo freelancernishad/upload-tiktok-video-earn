@@ -42,6 +42,19 @@ export default {
     created() {
 
 
+        if(User.dateformat()[9]<=23){
+            if(User.dateformat()[9]>=10){
+                // this.$router.push({ name: 'Authuser' });
+            }else{
+                alert('কাজের সময় সকাল ১০টা থেকে রাত ১২টা পযর্ন্ত')
+                this.$router.push({ name: 'Useraccount' });
+            }
+        }else{
+            alert('কাজের সময় সকাল ১০টা থেকে রাত ১২টা পযর্ন্ত')
+            this.$router.push({ name: 'Useraccount' });
+        }
+
+
     },
 
     data() {
