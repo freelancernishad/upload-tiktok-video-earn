@@ -25,7 +25,7 @@
                 </div>
                 <div class="container-fluid">
                     <div class="form-group">
-                        <label><span class="require">*</span> {{ $t('Bank_account.value') }} (Bkash/Nagod/USDT)</label>
+                        <label><span class="require">*</span> {{ $t('Bank_account.value') }} (Bkash/Nagod/Roket)</label>
                         <input type="text" v-model="row.user.Bank_account" class="form-control"
                             placeholder="Please add an account" :readonly="readonly" required>
                     </div>
