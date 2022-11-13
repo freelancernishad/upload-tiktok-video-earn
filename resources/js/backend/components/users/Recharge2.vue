@@ -74,10 +74,21 @@
                             <label for="">Sender Number</label>
                             <input type="tel" class="form-control" v-model="form.sender" required>
                         </div>
+
+
                         <div class="form-group mb-3">
                             <label for="">Transition Id</label>
                             <input type="text" class="form-control" v-model="form.trx" required>
                         </div>
+
+                        <div class="form-group">
+                            <label for="">Screenshot</label>
+                            <input class="form-control form-control-lg" id="formFileLg"
+                                @change="FileSelected($event, 'screenshot')" type="file">
+                            <img class="img-thumbnail" :src="form.screenshot" alt="">
+                        </div>
+
+
                         <button class="btn btn-secondary" @click="nextFun(1)">Previous</button>
                         <button class="money-btn" style="padding: 8px 14px;font-size: 23px;color: white;" type="button" disabled v-if="con">Wait...</button>
                         <button class="money-btn" style="padding: 8px 14px;font-size: 23px;color: white;" type="submit" v-else>Submit</button>
