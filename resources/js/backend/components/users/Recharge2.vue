@@ -32,7 +32,7 @@
 
 
                     <div class="row">
-                            <div class="col-6 amount_item" @click="amount = 700/rates"><span>{{ 700/rates }}</span> </div>
+                            <div class="col-6 amount_item" @click="amount = 500/rates"><span>{{ 500/rates }}</span> </div>
                             <div class="col-6 amount_item" @click="amount = 1000/rates"><span>{{ 1000/rates }}</span></div>
                             <div class="col-6 amount_item" @click="amount = 2000/rates"><span>{{ 2000/rates }}</span></div>
                             <div class="col-6 amount_item" @click="amount = 5000/rates"><span>{{ 5000/rates }}</span></div>
@@ -52,7 +52,7 @@
                                 <li class="li"><span>{{ form.method }} Account</span><span>
                                         <input type="hidden" v-model="copyMessage">
                                         <!-- <input type="button" value="copy" class="copy" @click="copyref"> -->
-                                        {{ copyMessage }} <i @click="copyref" class="far fa-copy"></i>
+                                        {{ copyMessage }} <i @click="copyref" style="font-size: 20px;padding: 5px;" class="far fa-copy"></i>
                                         <br>
                                         <img style="width:200px; height: 200px !important;"
                                             v-if="form.method=='USDT (TRC-20)'"

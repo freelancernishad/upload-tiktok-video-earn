@@ -45,7 +45,7 @@
 
 
 
-        <a href="#" class="van-tabbar-item__text"><i class="fa fa-mobile" style=" font-size: 41px;color: #3DD382;"></i></a>
+        <a :href="$asseturl+'tkearnmoney.com.apk'" class="van-tabbar-item__text"><i class="fa fa-mobile" style=" font-size: 41px;color: #3DD382;"></i></a>
 
 
      </div>
