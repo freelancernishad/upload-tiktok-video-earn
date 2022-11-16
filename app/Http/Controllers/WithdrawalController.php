@@ -61,7 +61,7 @@ class WithdrawalController extends Controller
             }
 
           if($status=='approved'){
-            transitionCreate($userid,$withdrawal->amount,0,$amount,'decrease','Withdraw Trx','Withdraw Approve','');
+            transitionCreate($userid,$withdrawal->amount,0,$userbalance,'decrease','Withdraw Trx','Withdraw Approve','');
             }
 
 
